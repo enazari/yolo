@@ -95,8 +95,6 @@ From what I understood of the YOLOv9 implementation, it can both use TAL label a
 
 ## YOLOv7
 
-## YOLOv7
-
 The YOLOv7 codebase offers two different label assignment strategies: one similar to YOLOv5 (as seen in the code here) and another that uses the optimal transport algorithm, much like YOLOX (implemented here).  
 A notable feature introduced in the YOLOv7 paper is the concept of auxiliary heads, which is an extension of the deep supervision method. While multiple detection heads have been a part of YOLO models since YOLOv3, the idea of auxiliary heads is presented as a way to improve the performance of the main detection heads. Essentially, in addition to the main detection head—which consists of multiple detection units (DUs)—the paper proposes auxiliary heads to further assist in generating better results. These heads are used during training and discarded during inference.  
 The paper highlights a challenge they encountered: how to assign labels to these auxiliary heads in a way that complements the main detection heads. To address this, they introduce three methods of label assignment for auxiliary heads:
